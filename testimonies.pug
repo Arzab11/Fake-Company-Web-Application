@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Testimonies
+  link(rel='stylesheet' type='text/css' href='/css/main.css')
+  link(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+nav
+  ol.navigation
+    li
+      a(href='/main') Candies Galore
+    li
+      a(href='/contact') Contact Form
+    li
+      a(href='/testimonies') Testimonies
+    li
+      a(href='/admin/contactlog') Contact Log
+    li
+      button.theme Toggle Theme
+h1.testimonies_title Customer Reviews!
+h3.testimonies_subtitle Check out this video review!
+.video
+  iframe(width='560' height='315' src='https://www.youtube.com/embed/iiQQO8btgf8?si=ac-tknmfaFh0JfEA' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+.Review-Container
+  .row
+    .review
+      p.review-body Staff was pleasant and provided excellent service
+      p.reviewer-name Kris Jenner
+    .review
+      p.review-body Quality of  the candy was amazing!
+      p.reviewer-name Kendall Jenner
+  .row2
+    .review
+      p.review-body Store was so big with many options
+      p.reviewer-name Kylie Jenner
+    .review
+      p.review-body The aroma of the store was pleasant and memorable
+      p.reviewer-name Kim Kardashian
+  .row3
+    .review
+      p.review-body The prices were fair and the candy quantity was plenty
+      p.reviewer-name Kanye West
+script(src='/js/main.js')

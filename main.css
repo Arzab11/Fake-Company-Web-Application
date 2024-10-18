@@ -1,0 +1,175 @@
+body {
+    background-color: orange;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 8px;
+    height: 100%;
+    background-color: rgb(80, 148, 226);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    border: 2px black;
+    padding: 1em;
+    background-color: rgb(255, 160, 122);
+    font-weight: bold;
+    position: absolute;
+}
+
+.mainpage_title {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 100px;
+}
+
+.mainpage_subtitle {
+    text-align: center;
+}
+
+strong {
+    color: blue;
+}
+
+i {
+    color: rgb(192, 108, 192);
+}
+
+.main_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.textbox {
+    width: 500px;
+    border: 10px solid green;
+    padding: 50px;
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: antiquewhite;
+}
+
+.testimonies_title {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 100px;
+}
+
+.testimonies_subtitle {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    margin-right: 50px;
+}
+.Review-container {
+    margin: 0 auto;
+}
+.review {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    border: 10px solid green;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: antiquewhite;
+}
+
+.reviewer-name {
+    text-align: right;
+    text-decoration: underline;
+}
+
+.Contact_title {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 90px;
+}
+
+.contact_table {
+    width: 300px;
+    border: 10px solid green;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+table {
+    margin: 0 auto;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(173, 238, 147);
+}
+
+.contact_log_title {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 90px;
+}
+
+.banner {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    font-size: 90px;
+}
+
+.sale-form {
+    width: 300px;
+    border: 10px solid green;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: antiquewhite;
+}

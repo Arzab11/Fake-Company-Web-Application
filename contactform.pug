@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Contact
+  link(rel='stylesheet' type='text/css' href='/css/main.css')
+  link(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+include navigationbar
+h1.Contact_title Contact Us
+.contact_table
+  form(action='/contact' method='post')
+    label(for='name') Name:
+    input#name(type='text' name='name' required='')
+    br
+    label(for='email') Email:
+    input#email(type='email' name='email' required='')
+    br
+    label(for='date') Date of Entry:
+    input#date(type='date' name='date')
+    br
+    label(for='response') Choose an enquiry:
+    select#response(name='response')
+      option(value='--Choose an option--') --Choose an option--
+      option(value='Issue with store?') Issue with store?
+      option(value='Recieved wrong candy from delivery?') Recieved wrong candy from delivery?
+      option(value='Candy quality was not to the standard promised?') Candy quality was not to the standard promised?
+    br
+    div
+      label#checkbox Query option found?
+      input#yes(type='checkbox' name='yes')
+      label(for='yes') Yes
+      input#no(type='checkbox' name='no')
+      label(for='no') No
+    #resultPlaceholder
+    .button
+      input(type='submit' value='Submit')
+script(src='/js/main.js')
+script(src='/js/contact.js')

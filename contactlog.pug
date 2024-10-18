@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+head
+  link#default(rel='stylesheet' type='text/css' href='/css/main.css')
+  link#dark(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+  meta(charset='UTF-8')
+  title Contact Log
+body
+  include navigationbar
+  .sale-form
+    input#saleMessage(type='text' placeholder='Enter sale message')
+    button#set Set
+    button#delete Delete
+  h1.contact_log_title Contact Log
+  table
+    tr
+      th Name
+      th Email
+      th Date of Entry
+      th Enquiry
+      th Query Option
+      th Time Until
+      th Delete Row
+      th id
+    each values in contacts
+      tr
+        td= values.name
+        td.a(href=`mailto:${values.email}`)= values.email
+        td= values.date
+        td= values.response
+        td= values.checkbox
+        td.time-until Time: #{values.date}
+        td
+          button.delete-row(id=values.id) DELETE ME
+        td= values.id
+script(src="/js/main.js")
+script(src="/js/table.js")
+script(src="/js/banner.js")
